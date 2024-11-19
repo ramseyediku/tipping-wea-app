@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- disable zooming in/out -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">  
+    <title>Bill Splitter</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <!-- adding app icon for iOS/android-->
+    <link rel="icon" sizes="192x192" href="IMG/budget.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="IMG/budget.png">
+
+</head>
+<body>
+    <header class="header">
+        <img class="nav-icon" src="IMG/menu.png" alt="button to open the settings navbar">
+        <div class="header-title">
+            <img class="icon" src="IMG/restaurant.png" alt="application icon">
+            <h1>Bill Splitter</h1>
+            <img class="icon" src="IMG/restaurant.png" alt="application icon">
+        </div>
+    </header>
+
+    <nav class="currency-nav" >
+        <img id="close-icon" src="IMG/cancel.png" alt="button to close the settings navbar">
+        <section class="home">
+            <p>Home currency</p>
+            <select name="homeCurrencySelector" class="currency-selector">
+                <option class="currency" value="GBP">GBP(£)</option>
+                <option class="currency" value="EUR">EUR(€)</option>
+                <option class="currency" value="USD">USD($)</option>
+                <option class="currency" value="JPY">JPY(¥)</option>
+                <option class="currency" value="BGN">BGN(лв)</option>
+                <option class="currency" value="CZK">CZK(Kč)</option>
+                <option class="currency" value="DKK">DKK(kr)</option>
+                <option class="currency" value="HUF">HUF(Ft)</option>
+                <option class="currency" value="PLN">PLN(zł)</option>
+                <option class="currency" value="RON">RON(lei)</option>
+                <option class="currency" value="SEK">SEK(kr)</option>
+                <option class="currency" value="CHF">CHF(CHF)</option>
+                <option class="currency" value="ISK">ISK(kr)</option>
+                <option class="currency" value="NOK">NOK(kr)</option>
+                <option class="currency" value="HRK">HRK(kn)</option>
+                <option class="currency" value="RUB">RUB(₽)</option>
+                <option class="currency" value="TRY">TRY(₺)</option>
+                <option class="currency" value="AUD">AUD(﷼)</option>
+                <option class="currency" value="CAD">CAD($)</option>
+                <option class="currency" value="CNY">CNY(¥)</option>
+                <option class="currency" value="ILS">ILS(₪)</option>
+                <option class="currency" value="INR">INR(₹)</option>
+            </select>    
+        </section>
+
+        <section class="away">
+            <p>Away currency</p>
+            <select name="awayCurrencySelector" class="currency-selector">
+                <option class="currency" value="GBP">GBP(£)</option>
+                <option class="currency" value="EUR">EUR(€)</option>
+                <option class="currency" value="USD">USD($)</option>
+                <option class="currency" value="JPY">JPY(¥)</option>
+                <option class="currency" value="BGN">BGN(лв)</option>
+                <option class="currency" value="CZK">CZK(Kč)</option>
+                <option class="currency" value="DKK">DKK(kr)</option>
+                <option class="currency" value="HUF">HUF(Ft)</option>
+                <option class="currency" value="PLN">PLN(zł)</option>
+                <option class="currency" value="RON">RON(lei)</option>
+                <option class="currency" value="SEK">SEK(kr)</option>
+                <option class="currency" value="CHF">CHF(CHF)</option>
+                <option class="currency" value="ISK">ISK(kr)</option>
+                <option class="currency" value="NOK">NOK(kr)</option>
+                <option class="currency" value="HRK">HRK(kn)</option>
+                <option class="currency" value="RUB">RUB(₽)</option>
+                <option class="currency" value="TRY">TRY(₺)</option>
+                <option class="currency" value="AUD">AUD(﷼)</option>
+                <option class="currency" value="CAD">CAD($)</option>
+                <option class="currency" value="CNY">CNY(¥)</option>
+                <option class="currency" value="ILS">ILS(₪)</option>
+                <option class="currency" value="INR">INR(₹)</option>
+            </select>
+        </section>
+  
+        <section class="logo">
+            <img class="icon" src="IMG/restaurant.png" alt="app icon">
+            <h1>Bill Splitter</h1>
+            <img class="icon" src="IMG/restaurant.png" alt="app icon">
+        </section>
+        
+    </nav>
+
+    <main class="main">
+        <div class="calculator">
+            <p class="input-screen">0</p>
+            <p class="result-screen">Bill Result...</p>
+
+            <div class="calculator-sections">
+                <section class="calculator-section">
+                    <p style="text-align: center; font-size: 1rem; margin-bottom: .45em;" >Amount:</p>
+                    <div class="keypad">
+                        <button class="kepyad-button number">7</button>
+                        <button class="kepyad-button number">8</button>
+                        <button class="kepyad-button number">9</button>
+                        <button class="kepyad-button number">4</button>
+                        <button class="kepyad-button number">5</button>
+                        <button class="kepyad-button number">6</button>
+                        <button class="kepyad-button number">1</button>
+                        <button class="kepyad-button number">2</button>
+                        <button class="kepyad-button number">3</button>
+                        <button class="kepyad-button number">0</button>
+                        <button class="kepyad-button cancel">C</button>
+                    </div> 
+                </section>
+                
+                <section class="calculator-section">
+                    <p style="text-align: center; font-size: 1rem; margin-bottom: .45em;" >Tip:</p>
+                    <section class="tips">
+                            <button class="kepyad-button tipValues" value="1">0%</button>           
+                            <button class="kepyad-button tipValues" value="1.05">5%</button>         
+                            <button class="kepyad-button tipValues" value="1.1">10%</button>         
+                            <button class="kepyad-button tipValues" value="1.15">15%</button>         
+                            <button class="kepyad-button tipValues" value="1.2">20%</button>
+                    </section>
+                </section>
+                  
+                <section class="calculator-section">
+                    <p style="text-align: center; font-size: 1rem; margin-bottom: .45em;" >Round to:</p>   
+                    <section class="round"> 
+                        <button class="kepyad-button round-vals" value="1">1</button>                    
+                        <button class="kepyad-button round-vals" value="5">5</button>                   
+                        <button class="kepyad-button round-vals" value="10">10</button>        
+                        <button class="kepyad-button round-vals" value="20">20</button>
+                    </section>  
+                </section>
+            </div>
+            <p style="text-align: center; font-size: 1.5rem; margin-top: 2em;" >Split Between:</p>
+            <section class="people-split">
+                <button class="kepyad-button people">2👱</button>
+                <button class="kepyad-button people">3👱</button>
+                <button class="kepyad-button people">4👱</button>
+                <button class="kepyad-button people">5👱</button>
+            </section>
+        </div>
+    </main>
+    <script src="JS/model.js"></script>
+    <script src="JS/view.js"></script>
+    <script src="JS/controller.js"></script>
+</body>
+</html>
